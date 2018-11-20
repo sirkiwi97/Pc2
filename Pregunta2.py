@@ -11,12 +11,49 @@ def menor_en_arreglo (n1,n2,n3,n4,n5):
         num.append(n1)
         if n2<n3 and n2<n4 and n3<n5:
             num.append(n2)
+            if n3<n2 and n3<n4 and n3<n5:
+                num.append(n3)
+                if  n4<n5:
+                    num.append(n4)
+                    num.append(n5)
+                else:
+                    num.append(n5)
+                    num.append(n4)    
+            elif n4<n2 and n4<n3 and n4<n5:
+                 num.append(n4)
+                 if n3<n2 and n3<n4 and n3<n5:
+                    num.append(n3)
+            else:
+                num.append(n5)  
         elif n3<n2 and n3<n4 and n3<n5:
             num.append(n3)
+            if n2<n3 and n2<n4 and n3<n5:
+                num.append(n2)
+                if  and n4<n5:
+                    num.append(n4)
+                    num.append(n5)
+
         elif n4<n2 and n4<n3 and n4<n5:
             num.append(n4)
+            if n1<n2 and n1<n3 and n1<n5:
+                num.append(n1)
+                if n2<n3 and n2<n5:
+                    num.append(n2)
+                    num.append(n5)
+                else:
+                    num.append(n5)
+                    num.append(n2)               
+
         else:
-            num.append(n5)            
+            num.append(n5)
+            if n1<n2 and n1<n3 and n1<n4:
+                num.append(n1)
+                if n2<n3 and n2<n4:
+                    num.append(n2)
+                    num.append(n4)
+                else:
+                    num.append(n4)
+                    num.append(n2)              
 
     elif n2<n1 and n2<n3 and n2<n4 and n2<n5:
         num.append(n2)
